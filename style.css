@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 70px; /* Added to account for fixed navbar */
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #b197da;
+    padding: 10px 0;
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#b197da;
+    color: white;
+    padding: 10px 20px;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.logo a:hover{
+    color: #0056b3;
+    font-size: 17px;
+    transition: all 0.3s ease-in-out;
+}
+.search{
+    display: flex;
+    margin-left: 100px;
+}
+.btn-outline-primary{
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.btn-outline-primary:hover{
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* .container {
+    background-color: #d5cabd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    min-height: calc(100vh - 70px);
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+} */
+ .container{
+    background-color: #d5cabd;
+    width:100%
+ }
+.container-Left{
+    width: 50%;
+    padding: 20px;
+}
+.container-Right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0 4px 8px #0056b3;
+}
+.container-Right img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.skills-animation {
+    height: 30px;
+    position: relative;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.skill {
+    position: absolute;
+    opacity: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0056b3;
+    animation: skillAnimation 9s infinite;
+}
+
+.skill:nth-child(1) {
+    animation-delay: 0s;
+}
+.skill:nth-child(2) {
+    animation-delay: 3s;
+}
+.skill:nth-child(3) {
+    animation-delay: 6s;
+}
+
+@keyframes skillAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    30% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    40% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
