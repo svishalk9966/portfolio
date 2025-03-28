@@ -5,7 +5,11 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    padding-top: 70px; /* Added to account for fixed navbar */
+    padding-top: 70px;/* Added to account for fixed navbar*/
+}
+main{
+    height: 100%;
+    width: 100%;
 }
 nav{
     position: fixed;
@@ -13,7 +17,7 @@ nav{
     width: 100%;
     z-index: 1000;
     background-color: #b197da;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 .logo{
     display: flex;
@@ -26,7 +30,7 @@ nav{
 .logo a{
     text-decoration: none;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
 }
 .logo a:hover{
     color: #0056b3;
@@ -45,7 +49,7 @@ nav{
     color: #fff;
 }
 
-/* .container {
+.container {
     background-color: #d5cabd;
     display: flex;
     justify-content: space-between;
@@ -55,30 +59,25 @@ nav{
     width: 100%;
     margin: 0;
     box-sizing: border-box;
-} */
- .container{
-    background-color: #d5cabd;
-    width:100%
- }
+}
 .container-Left{
     width: 50%;
     padding: 20px;
+    font-size: 25px;
 }
 .container-Right{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    align-items: center;
-    box-shadow: 0 4px 8px #0056b3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%
 }
 .container-Right img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+    height: 500px;
+    width: 500px;
+    border-radius: 50% ;
 }
 .skills-animation {
-    height: 30px;
+    height: 60px;
     position: relative;
     margin: 10px 0;
     overflow: hidden;
@@ -87,7 +86,7 @@ nav{
 .skill {
     position: absolute;
     opacity: 0;
-    font-size: 1.2rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #0056b3;
     animation: skillAnimation 9s infinite;
@@ -124,4 +123,16 @@ nav{
         opacity: 0;
         transform: translateY(-20px);
     }
+}
+.btn-primary{
+    background-color: rgb(73, 73, 230);
+    height: 30px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    font-size:medium;
+}
+.container-two{
+    height: 100px;
+    width: 100%;
 }
